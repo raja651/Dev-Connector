@@ -1,0 +1,27 @@
+{
+  "name": "mern_devconnector",
+  "version": "1.0.0",
+  "description": "Social Network for devs",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Raja",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.1.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.1.1",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.1",
+    "nodemon": "^1.19.1"
+  }
+}
